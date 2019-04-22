@@ -1,6 +1,6 @@
 <div>
   <% @students.each do |student| %>
     <div><%= student.first_name + " " + student.last_name %></div>
-    <%= link_to("student", student_path(student.id))%>
   <% end %>
+  <%=link_to("Index Page", student_path(@student))%>
 </div>
